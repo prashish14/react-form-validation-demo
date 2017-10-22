@@ -29,8 +29,8 @@ class Form extends Component {
         fieldValidationErrors.email = emailValid ? '' : ' is invalid';
         break;
       case 'password':
-        passwordValid = value.length >= 6;
-        fieldValidationErrors.password = passwordValid ? '': ' is too short';
+        passwordValid = value.length >= 8;
+        fieldValidationErrors.password = passwordValid ? '': 'is short';
         break;
       default:
         break;
@@ -48,7 +48,7 @@ class Form extends Component {
   }
   render () {
     return (
-      <form className="demoForm">
+      <form className="Form">
         <h2>Sign up</h2>
         <div className="panel panel-default">
           <FormErrors formErrors={this.state.formErrors} />
