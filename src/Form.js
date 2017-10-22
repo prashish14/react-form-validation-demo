@@ -14,14 +14,12 @@ class Form extends Component {
       formValid: false
     }
   }
-
   handleUserInput = (e) => {
     const name = e.target.name;
     const value = e.target.value;
     this.setState({[name]: value},
                   () => { this.validateField(name, value) });
   }
-
   validateField(fieldName, value) {
     let fieldValidationErrors = this.state.formErrors;
     let emailValid = this.state.emailValid;
@@ -79,5 +77,4 @@ class Form extends Component {
     )
   }
 }
-
 export default Form;
