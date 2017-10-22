@@ -13,7 +13,7 @@ class App extends Component {
         </div>
         <Form />
         <h4>
-          From <a style={{textDecoration: 'underline'}} href="https://learnetto.com/users/hrishio/courses/the-complete-react-on-rails-5-course">The Complete React on Rails Course</a>
+          From <a style={{textDecoration: 'underline'}} href="https://learnetto.com/users/hrishio/courses/the-complete-react-on-rails-5-course">React email validate</a>
         </h4>
       </div>
     );
